@@ -1,24 +1,19 @@
 ---
 layout: default
-title: Khallil's Blog
+title: Writings
 ---
 
 <div class="content">
   <div class="related">
     <ul class="posts">
       {% for post in site.posts %}
-
-
-    <a href="{{ post.url }}">
-      <li class="post">
-        <span class="post_title"> {{ post.title }} </span>
-        <span class="post_date">{{ post.date | date: "%B %e, %Y" }}</span>
-      </li>
-    </a>
-
-
-
-
+          <li class="post">
+        <a href="{{ post.url }}">
+          <span class="post_title"> {{ post.title }} </span><br/>
+          <span class="post_date">{{ post.date | date: "%B %e, %Y" }}</span>
+        </a>
+        <p class="hidden-phone summary">{{ post.summary }}</p>
+          </li>
       {% endfor %}
     </ul>
   </div>
