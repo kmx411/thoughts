@@ -1,60 +1,101 @@
 ---
 ---
 
+@topBar: #2A8FBD;
+@backgroundColour: #f7f7fa;
+@highlightGrey: #666666;
+@plainGrey: #CCCCCC;
+@postTitle: #AD234B;
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800");
+
 html{
   height: 100%;
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: @backgroundColour;
   height: 100%;
+  font-family: 'Open Sans';
+}
+
+#top-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: @topBar;
+}
+
+#wrap {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
 
 a {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
   text-decoration: none;
-  color: black;
+  color: @postTitle;
 }
 
 a:hover {
-  color: #162048;
+  color: @highlightGrey;
 }
 
 .container {
-  background-color: white;
   min-height: 100%;
   padding: 0 10px 0 10px;
 }
 
 .title{
-  text-align: center;
+  line-height: 27px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-style: italic;
+  font-size: 20px;
+  color: @plainGrey;
+  a {
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    text-decoration: underline;
+    color: @highlightGrey;
+  }
+
+  a:hover {
+    color: @postTitle;
+  }
+}
+
+.highlight-text {
+  font-style: initial;
+  font-weight: bold;
+  color: @highlightGrey;
 }
 
 .posts {
   list-style: none;
   margin-left: auto;
   margin-right: auto;
-  border-top: 1px solid black;
 
   .post {
     padding: 14px 0 14px 0;
     overflow: hidden;
-    border-bottom: 1px solid grey;
   }
 
   .summary {
     float: left;
-    width: 65%;
   }
 
   .post_title {
-    width: 35%;
     float: left;
     font-weight: bold;
     font-size: 25px;
   }
 
   .post_date {
-    width: 35%;
     float: left;
     font-weight: 200;
     color: grey;
@@ -81,53 +122,16 @@ a:hover {
 /* responsive design */
 /* Large desktop */
 @media (min-width: 1200px) {
-  .posts{
-  }
-
-  #content_post{
-    width: 768px;
-  }
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  .posts{
-  }
-
-  .summary{
-    clear: left;
-  }
-
-  #content_post{
-    width: 768px;
-  }
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  body {
-    padding: 0;
-  }
-  .post_title {
-    width: 100% !important;
-  }
-
-  .post_date {
-    width: 100% !important;
-  }
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  body {
-    padding: 0;
-  }
-
-  .post_title {
-    width: 100% !important;
-  }
-
-  .post_date {
-    width: 100% !important;
-  }
 }
