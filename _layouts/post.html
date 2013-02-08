@@ -3,8 +3,16 @@ layout: default
 ---
 
 <div class="content">
-  <div id="content_post">
-    <p class="title">{{ post.title }}</p>
-    {{ content }}
+  <div class="row">
+    <div class="span12">
+      <div id="content_post">
+        <div class="post-title" style=background-image:url({{page.hero}}) no-repeat center center fixed;>
+          <div class="span4">
+          {{ page.title }}
+        </div>
+        </div>
+        {{ content }}
+      </div>
+    </div>
   </div>
 </div>

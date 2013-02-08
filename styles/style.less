@@ -4,7 +4,7 @@
 @topBar: #2A8FBD;
 @backgroundColour: #f7f7fa;
 @highlightGrey: #666666;
-@plainGrey: #CCCCCC;
+@plainGrey: #C0C0C0;
 @postTitle: #AD234B;
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800");
 
@@ -113,6 +113,25 @@ a:hover {
       color: #00008c;
     }
 
+    .hero {
+      filter: blur(6px);
+      -webkit-filter: blur(5px);
+      /*-moz-filter: blur(10px);*/
+      /*-o-filter: blur(10px);*/
+      /*-ms-filter: blur(10px);*/
+    }
+
+    .post-title {
+      background-position: 50% 0;
+      background-attachment: fixed;
+      overflow: hidden;
+      height: auto;
+      background-size: 100% auto;
+      text-align: center;
+      color: white;
+      font-style: initial;
+      font-weight: bold;
+    }
   }
 }
 
