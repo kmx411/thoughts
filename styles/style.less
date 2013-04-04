@@ -10,6 +10,7 @@
 
 html{
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,9 +54,12 @@ a:hover {
   line-height: 27px;
   margin-top: 60px;
   margin-bottom: 40px;
+  font-family: 'Gentium Book Basic';
+  font-weight: 400;
   font-style: italic;
   font-size: 20px;
-  color: @plainGrey;
+  color: @highlightGrey;
+
   a {
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
@@ -72,6 +76,7 @@ a:hover {
 .highlight-text {
   font-style: initial;
   font-weight: bold;
+  font-family: 'Open Sans';
   color: @highlightGrey;
 }
 
@@ -103,35 +108,19 @@ a:hover {
   }
 }
 
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 103%;
+  margin-left: -1px;
+}
+
 .content {
-  #content_post {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 0;
-
-    a {
-      color: #00008c;
-    }
-
-    .hero {
-      filter: blur(6px);
-      -webkit-filter: blur(5px);
-      /*-moz-filter: blur(10px);*/
-      /*-o-filter: blur(10px);*/
-      /*-ms-filter: blur(10px);*/
-    }
-
-    .post-title {
-      background-position: 50% 0;
-      background-attachment: fixed;
-      overflow: hidden;
-      height: auto;
-      background-size: 100% auto;
-      text-align: center;
-      color: white;
-      font-style: initial;
-      font-weight: bold;
-    }
+  .inner_content {
+    float: none;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
@@ -149,8 +138,21 @@ a:hover {
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+  .inner_content {
+    padding: 0 5px 0 5px !important;
+  }
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  .inner_content {
+    padding: 0 5px 0 5px !important;
+  }
 }

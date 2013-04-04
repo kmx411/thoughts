@@ -1,18 +1,29 @@
 ---
-layout: default
 ---
+<!DOCTYPE HTML>
 
-<div class="content">
-  <div class="row">
-    <div class="span12">
-      <div id="content_post">
-        <div class="post-title" style=background-image:url({{page.hero}}) no-repeat center center fixed;>
-          <div class="span4">
-          {{ page.title }}
-        </div>
-        </div>
-        {{ content }}
+<html>
+  {% include head.html %}
+  <body>
+    <div id="top-bar"></div>
+    <div class="row-fluid">
+      {% if page.hero %}
+      <div class="hero" style=background-image:url({{page.hero}}) no-repeat center center fixed;>
       </div>
+      {% endif %}
+
+      <div id="wrap">
+        <div class="content">
+          <div class="row">
+            <div class="span8 inner_content">
+                {{ page.title }}
+                {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
+  </body>
+</html>
+
