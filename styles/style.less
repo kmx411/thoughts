@@ -54,9 +54,9 @@ a:hover {
   line-height: 27px;
   margin-top: 60px;
   margin-bottom: 40px;
-  font-family: 'Gentium Book Basic';
+  /*font-family: 'Gentium Book Basic';*/
   font-weight: 400;
-  font-style: italic;
+  /*font-style: italic;*/
   font-size: 20px;
   color: @highlightGrey;
 
@@ -121,6 +121,25 @@ a:hover {
     float: none;
     margin-left: auto !important;
     margin-right: auto !important;
+    font-size: 20px;
+    line-height: 150%;
+
+    h1 {
+      font-size: 50px;
+      margin-top: 45px;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: @highlightGrey;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 25px;
+      line-height: 120%;
+      line-height: 25px;
+    }
   }
 }
 
@@ -130,6 +149,9 @@ a:hover {
 /* responsive design */
 /* Large desktop */
 @media (min-width: 1200px) {
+  #wrap{
+    width: 767px;
+  }
 }
  
 /* Portrait tablet to landscape and desktop */
@@ -138,11 +160,7 @@ a:hover {
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  body {
-    padding: 0;
-  }
-  .inner_content {
-    padding: 0 5px 0 5px !important;
+  #wrap{
   }
 }
  
@@ -154,5 +172,9 @@ a:hover {
 
   .inner_content {
     padding: 0 5px 0 5px !important;
+  }
+
+  #wrap{
+    padding: 0 8px;
   }
 }
