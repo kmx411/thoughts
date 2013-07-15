@@ -35,6 +35,11 @@ But what's even more surprising is how weak the relationship is between facebook
 I spent 394 minutes in **messages**, 210 minutes in the **double degree group**, 54 minutes **looking at my own profile**, 27 looking at Marc Zuckerburgs and over 120 minutes on photos. 
 
 ##Sleep
+Plotting my bedtime against how long I slept yields a consisntent gap. I seem to sleep the same amount each night, regardless of when I should be waking up.
+<div id="sleep_time"> </div>
+I sleep best on **Sundays** and longest on **Saturdays**. I sleep worst on **Tuesdays** and spend the least amount of time in bed on **Wednesdays**. On average I sleep for **6.8 hours** and go to sleep at **2:44 am**.  
+
+If you have any questions or comments, join the conversation below. Or send me a [tweet](http://www.twitter.com/kmx411).
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"> </script>
 <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"> </script>
