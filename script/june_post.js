@@ -102,3 +102,78 @@ Morris.Donut({
   ],
   formatter: function(y, data){ return y + ' minutes' }
 });
+
+Morris.Donut({
+  element: 'education-donut',
+  data: [
+  { label: 'Algorithms', value: 6244.0 },
+  { label: 'Statistics', value: 2052.0 },
+  { label: 'Combinatorics', value: 3093.0 },
+  { label: 'Accounting', value: 1323.0 },
+  { label: 'Law', value: 2542.0 }
+  ],
+  formatter: function(y, data){ return y + ' minutes' }
+});
+
+Morris.Bar({
+  element: 'time_per_site',
+  data: [
+    { y: 'Facebook', t: 2161 },
+    { y: 'Flash Cards Website', t: 732 },
+    { y: 'YouTube', t: 157 },
+    { y: 'CS Class Website', t: 83 },
+    { y: 'Hacker News', t: 93 },
+    { y: 'Google', t: 76 },
+    { y: 'Wikipedia', t: 58 },
+    { y: 'RapGenius', t: 51 },
+    { y: 'Wolfram Alpha', t: 43 },
+    { y: '9to5Mac', t: 38 },
+    { y: 'Reddit', t: 21 }
+  ],
+  xkey: 'y',
+  ykeys: ['t'],
+  labels: ['Minutes Spent'],
+  hideHover: true
+});
+
+Morris.Line({
+  element: 'fb_studying',
+  hideHover:true,
+  data: [
+  { y: '2013-06-5', s: 0, f:15 },
+  { y: '2013-06-6', s: 0, f:103 },
+  { y: '2013-06-7', s: 0, f:95 },
+  { y: '2013-06-8', s: 0, f:11 },
+  { y: '2013-06-9', s: 0, f: 115 },
+  { y: '2013-06-10', s: 0, f: 146},
+  { y: '2013-06-11', s: 0, f: 7},
+  { y: '2013-06-12', s: 0, f: 45},
+  { y: '2013-06-13', s: 0, f: 87},
+  { y: '2013-06-14', s: 502.0, f: 104 },
+  { y: '2013-06-15', s: 520.0, f: 106},
+  { y: '2013-06-16', s: 530.0, f: 84},
+  { y: '2013-06-17', s: 437.0, f: 99},
+  { y: '2013-06-18', s: 280.0, f: 88},
+  { y: '2013-06-19', s: 510.0, f: 134},
+  { y: '2013-06-20', s: 570.0, f: 101},
+  { y: '2013-06-21', s: 720.0, f: 75},
+  { y: '2013-06-22', s: 378.0, f: 72},
+  { y: '2013-06-23', s: 445.0, f: 70},
+  { y: '2013-06-24', s: 455.0, f: 61},
+  { y: '2013-06-25', s: 390.0, f: 88},
+  { y: '2013-06-26', s: 0, f: 45},
+  { y: '2013-06-27', s: 0, f: 126},
+  { y: '2013-06-28', s: 0, f: 0},
+  { y: '2013-06-29', s: 0, f: 5},
+  { y: '2013-06-30', s: 0, f: 0},
+  { y: '2013-07-1', s: 0, f: 0},
+  { y: '2013-07-2', s: 0, f: 0},
+  { y: '2013-07-3', s: 0, f: 0},
+  { y: '2013-07-4', s: 40.0, f: 0},
+  { y: '2013-07-5', s: 325.0, f: 15},
+  { y: '2013-07-6', s: 492.0, f: 103}
+],
+  xkey: 'y',
+  ykeys: ['f', 's'],
+  labels: ['Facebook', 'Studying']
+});
