@@ -2,14 +2,14 @@
 layout: post
 title: Counting June
 subtitle: Above is a week in my Calendar for June.
-facebook: 'http://www.facebook.com/khallilm'
+facebook: 'https://www.facebook.com/khallilm/posts/10151468151016507'
 hero: /assets/calendar.png
-summary: Inspired by Nicholas Felton, I spent the last month documenting moments of my life. The goal was the quanitfy the month of June in the areas of interactions with people, activities, sleep, and web usage. Here I present a high level view of my month by the numbers. Essentially I've managed to count June. 
+summary: Inspired by Nicholas Felton, I spent the last month documenting moments of my life. The goal was the quantify the month of June in the areas of interactions with people, activities, sleep, and web usage. Here I present a high level view of my month by the numbers. Essentially I've managed to count June. 
 ---
 
 <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css"/>
 
-Inspired by Nicholas Felton, I spent the last month documenting moments of my life. The goal was the quanitfy the month of June in the areas of interactions with people, activities, sleep, and web usage. Here I present a high level view of my month by the numbers. Essentially I've managed to count June. 
+Inspired by Nicholas Felton, I spent the last month documenting moments of my life. The goal was the quantify the month of June in the areas of interactions with people, activities, sleep, and web usage. Here I present a high level view of my month by the numbers. Essentially I've managed to count June. 
 
 ##Important Note
 All activity was recorded in my Calendar, therefore the measurements below are only within the count of recorded events. Hence, sleep is not included in the People or Activities sections, and any time spent alone is because an event was recorded alone (ie. Stats studying)
@@ -32,10 +32,10 @@ It's interesting to see the number of minutes I spent on each website. Note that
 <div id="time_per_site"> </div>
 But what's even more surprising is how weak the relationship is between facebook usage and studying. Note that this only includes studying for midterms.
 <div id="fb_studying"> </div>
-I spent 394 minutes in **messages**, 210 minutes in the **double degree group**, 54 minutes **looking at my own profile**, 27 looking at Marc Zuckerburgs and over 120 minutes on photos. 
+I spent 394 minutes in **messages**, 210 minutes in the **double degree group**, 54 minutes **looking at my own profile**, 27 looking at Marc Zuckerberg and over 120 minutes on photos. 
 
 ##Sleep
-Plotting my bedtime against how long I slept yields a consisntent gap. I seem to sleep the same amount each night, regardless of when I should be waking up.
+Plotting my bedtime against how long I slept yields a consistent gap. I seem to sleep the same amount each night, regardless of when I should be waking up.
 <div id="sleep_time"> </div>
 I sleep best on **Sundays** and longest on **Saturdays**. I sleep worst on **Tuesdays** and spend the least amount of time in bed on **Wednesdays**. On average I sleep for **6.8 hours** and go to sleep at **2:44 am**.  
 
